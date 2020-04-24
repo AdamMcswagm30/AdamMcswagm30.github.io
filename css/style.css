@@ -1,6 +1,7 @@
 h1 {
     color: white;
     background-color: blue;
+    padding:10px;
 }
 .home-img {
     float:right;
