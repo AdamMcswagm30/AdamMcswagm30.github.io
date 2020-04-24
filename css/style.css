@@ -10,3 +10,6 @@ h1 {
     font:sans-seriff;
     border-bottom: 2px solid black;
 }
+body {
+    background-color: red;
+}
