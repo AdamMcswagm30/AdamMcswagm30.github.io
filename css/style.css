@@ -1,17 +1,38 @@
 h1 {
-    color: white;
-    background-color: blue;
+    color: rgb(194, 186, 186);
+    background-color: rgb(46, 46, 136);
     padding:10px;
+    border-radius:10px;
+}
+.main-content{
+    max-width: 80%;
+    margin:auto;
 }
 .home-img {
     float:right;
-    width:300px;
-    height:500px;
+    max-height:210px;
+    margin-right: 10px;
+    margin-top:10px;
 }
 .home-title {
     font:sans-seriff;
     border-bottom: 2px solid black;
 }
-body {
-    background-color: red;
+footer{
+    background-color: rgb(46, 46, 136);
+    color: rgb(194, 186, 186);
+    padding:10px;
+    border-radius:10px;
+    text-align: center;
+}
+.content{
+    max-width: 65%;
+    margin:auto;
+}
+.footer-p1{
+    margin: 0;
+}
+.footer-p2{
+    color: yellow;
+    margin:0;
 }
