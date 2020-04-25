@@ -5,3 +5,4 @@ function date_time() {
     var now = day + ' ' + time;
     document.getElementById('date_time').innerHTML = now;
 }
+date_time();
