@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Oxygen&display=swap');
+.content{
+    background-color: rgb(39, 45, 138);
+    width:70%;
+    margin:auto;
+}
+h1 {
+    color: rgb(194, 186, 186);
+    background-color: rgb(46, 46, 136);
+    padding:10px;
+    border-radius:10px;
+}
+h2{
+    color: rgb(39, 45, 138);
+    font-size: large;
+    margin:auto;
+    font-family: 'Bangers';
+}
+body{
+    background-color: white;
+
+}
+main{
+    max-width: 80%;
+    border-radius: 10px;
+    margin:auto;
+    background-color: lightgray;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+.example_imgs{
+    width: 90%;
+    margin:auto;
+}
+p{
+    font-family: 'Oxygen';
+    margin:auto;
+    padding:5px;
+}
+
+
+@media screen and (min-width:650px){
+   .content{
+        background-color: rgb(39, 45, 138);
+        width:70%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+   } 
+   .main-1{
+        grid-column: 1/2;
+        max-width: 90%;
+        margin:auto;
+        border-radius: 10px;
+    }
+    .main-2{
+        grid-column: 2/3;
+        max-width: 90%;
+        margin:auto;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    .content{
+        background-color: rgb(39, 45, 138);
+        width:85%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+    .main-1{
+        grid-column: 1/2;
+        max-width: 90%;
+        margin:auto;
+        border-radius: 10px;
+    }
+    .main-2{
+        grid-column: 2/3;
+        max-width: 90%;
+        margin:auto;
+        border-radius: 10px;
+    }
+    .main-3{
+        grid-column: 3/4;
+        max-width: 90%;
+        margin:auto;
+        border-radius: 10px;
+    }
+ }
