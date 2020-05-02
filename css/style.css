@@ -41,3 +41,10 @@ footer{
     color: yellow;
     margin:0;
 }
+footer a{
+    color: rgb(194, 186, 186);
+}
+footer a:hover{
+    color: yellow;
+    font-size: 1.1em;
+}
