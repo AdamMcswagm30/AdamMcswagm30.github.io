@@ -118,12 +118,15 @@ p{
     display: flex;
     justify-content: center;
 }
-.people img{
+.people div{
     flex: 1 1 100%;
     padding:1em;
-    max-width: 25em;
-    margin: 1em;
-    perspective: 1000px;
+    width: 25em;
+    height: 25em;
+    margin-bottom: 2.5em;
+}
+.people div img{
+    max-width: 100%;
 }
 .person1{
     background-color: transparent;
@@ -147,7 +150,7 @@ p{
   .person2:hover .inner {
     transform: rotateY(180deg);
   }
-  front, 
+  .front, 
   .back {
     position: absolute;
     width: 100%;
