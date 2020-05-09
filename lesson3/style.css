@@ -13,6 +13,11 @@ h3{
     font-family: 'Righteous';
     font-size: 1.6em;
 }
+main h2{
+    font-family: 'Righteous';
+    font-size: 1.8em;
+    text-align: center;
+}
 footer{
     background-color: mediumslateblue;
     justify-content: center;
@@ -72,3 +77,79 @@ p{
     display: inline-block;
     margin: 0 43%;
 }
+.color1{
+    font-family: 'Lato';
+    background-color: #4381C1;
+    color:black;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 10px;;
+}
+.color2{
+    font-family: 'Lato';
+    background-color:#BDADEA;
+    color:black;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 10px;;
+}
+.color3{
+    font-family: 'Lato';
+    background-color:#404E5C;
+    color:white;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 10px;;
+}
+.color4{
+    font-family: 'Lato';
+    background-color:#FFCE22;
+    color:black;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.people{
+    display: flex;
+    justify-content: center;
+}
+.people img{
+    flex: 1 1 100%;
+    padding:1em;
+    max-width: 25em;
+    margin: 1em;
+    perspective: 1000px;
+}
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .person1:hover .inner {
+    transform: rotateY(180deg);
+  }
+  .person2:hover .inner {
+    transform: rotateY(180deg);
+  }
+  front, 
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .back {
+    background-color: lightgray;
+    color: #2A1E5C;
+    transform: rotateY(180deg);
+  }
+  
