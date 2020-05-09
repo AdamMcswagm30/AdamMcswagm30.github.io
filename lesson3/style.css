@@ -2,11 +2,16 @@
 header{
     background-color: mediumslateblue;
     border-radius: 10px;
+    padding-bottom: 0.5em;
 }
 header h1{
     text-align: center;
     font-family: 'Righteous';
     padding-top: 1em;
+}
+h3{
+    font-family: 'Righteous';
+    font-size: 1.6em;
 }
 footer{
     background-color: mediumslateblue;
@@ -19,11 +24,16 @@ footer p{
     text-align: center;
 }
 main{
-    background-color: mintcream;
-
+    background-color:White;
+}
+main p{
+    text-align: center;
+}
+main h3{
+    text-align: center;
 }
 .content{
-    max-width: 85%;
+    max-width: 70%;
     margin: 0 auto;
     border-radius: 50px;
 }
@@ -52,4 +62,13 @@ nav a:hover{
 }
 nav ul li{
     flex: 1 1 100%;
+}
+p{
+    font-family: 'Lato';
+}
+.logo-img{
+    max-width: 10em;
+    margin: 0 auto;
+    display: inline-block;
+    margin: 0 43%;
 }
