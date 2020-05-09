@@ -125,6 +125,14 @@ p{
     margin: 1em;
     perspective: 1000px;
 }
+.person1{
+    background-color: transparent;
+    perspective: 1000px;
+}           
+.person2{
+    background-color: transparent;
+    perspective: 1000px;    
+}
 .inner {
     position: relative;
     width: 100%;
