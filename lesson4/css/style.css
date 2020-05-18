@@ -11,12 +11,30 @@ h1,h2, h4{
 }
 header{
     background-color: rgb(105, 209, 95);
+    justify-content: center;
+}
+.header{
+    display: flex;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0 auto;
+    justify-content: center;
 }
 header p {
     text-align: center;
 }
+header h1{
+    display: inline-block;
+    margin:auto;
+}
 p{
     font-family: 'Lato';
+}
+.logo-img{
+    max-width: 8%;
+    display: inline-block;
+    justify-items: center;
+    padding-right:1em;
 }
 main p{
     text-align: center;
@@ -55,33 +73,47 @@ footer{
     background-color: rgb(82, 163, 65);
     padding:0.5em;
 }
+footer p{
+    margin: 1em auto;
+    text-align: center;
+}
 .hero{
     max-width: 80%;
-    background-color: rgb(105, 209, 95);
+    background-image: url('../images/field.jpeg');
     margin: 1em auto;
     padding: 1em;
+    background-size: cover;
 }
 .weather-summary{
-    float: left;
     max-width: 15em;
     background-color: rgb(105, 209, 95);
 }
-.hero-img{
-    max-width: 100%;
-}
 
-.forcast{
+.forecast{
     max-width: 80%;
     background-color: rgb(105, 209, 95);
     margin: 1em auto;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
 }
-
+.forecast-box{
+    background-color: rgb(40, 40, 150);
+    width: 80%;
+    height: 4em;
+    display:block;
+    margin:0 auto;
+}
 .article{
     max-width: 80%;
     background-color: rgb(105, 209, 95);
     margin: 1em auto;
     padding: 1em;
+    display:flex;
+    flex-direction: row;
+}
+.article-words{
+    max-width: 50%;
 }
 .article-img{
     max-width: 100%;
@@ -104,6 +136,8 @@ footer{
     grid-column: 2/3;
     max-width: 80%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
