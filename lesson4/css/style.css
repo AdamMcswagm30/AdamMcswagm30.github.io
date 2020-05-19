@@ -157,10 +157,10 @@ footer p{
     margin: 1em auto;
     padding: 1em;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .article-words{
-    max-width: 50%;
+    max-width: 100%;
 }
 .article-img{
     max-width: 100%;
@@ -240,6 +240,20 @@ footer p{
     p{
         font-family: 'Lato';
         font-size: 1em;
+    }
+    .article{
+        max-width: 80%;
+        background-color: rgb(105, 209, 95);
+        margin: 1em auto;
+        padding: 1em;
+        display:flex;
+        flex-direction: row;
+    }
+    .article-words{
+        max-width: 50%;
+    }
+    .article-img{
+        max-width: 100%;
     }
 }
 
