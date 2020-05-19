@@ -257,6 +257,9 @@ ul{
         display: flex;
         justify-content: space-evenly;
     }
+    footer p{
+        font-size: 0.45em;
+    }
 }
 
     @media screen and (min-width:1000px){
@@ -290,5 +293,8 @@ ul{
         .navigation {
             display: flex;
             justify-content: space-evenly;
+        }
+        footer p{
+            font-size: 0.6em;
         }
     }
