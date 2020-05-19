@@ -273,5 +273,10 @@ footer p{
         .dropbtn{
             display: none;
         }
-
+        .article-words{
+            max-width: 50%;
+        }
+        .article-img{
+            max-width: 60%;
+        }
     }
