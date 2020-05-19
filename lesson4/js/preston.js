@@ -10,3 +10,8 @@ function dayTime(){
     document.getElementById('date_time').innerHTML = output;
 }
 dayTime();
+
+const hambutton = document.querySelector('.ham');
+const mainnav = document.querySelector('.navigation')
+
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
