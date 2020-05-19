@@ -182,15 +182,9 @@ ul{
         max-width: 75%;
         margin:auto;
     }
-    .navigation{
-        margin-left: 0;
-        margin-right: 0;
-    }
     nav ul{
         display: flex;
         flex-direction: row;
-        margin-left: 0;
-        margin-right: 0;
        } 
     nav ul li{
         background-color: rgb(82, 163, 65);
