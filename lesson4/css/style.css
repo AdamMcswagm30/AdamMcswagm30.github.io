@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Righteous&display=swap');
-
+#fridays{
+    background-color: gold;
+    color: black;
+    text-align: center;
+    display: block;
+}
 .content{
     max-width: 75%;
     margin:auto;
