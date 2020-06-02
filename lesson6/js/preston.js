@@ -1,3 +1,14 @@
+const images = document.querySelectorAll('img');
+
+const io = new IntersectionObserver (
+    (entries, io) => {
+        console.log(entries);
+    }
+);
+io.observe(images);
+
+
+
 function dayTime(){
     var full_date = new Date();
     var daysofWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
