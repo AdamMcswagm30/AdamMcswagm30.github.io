@@ -36,6 +36,20 @@ function fridays(){
  fridays();
 
 
+ function windChill(t,s){
+    let f= 35.74 + 0.6125*t - (35.75*Math.pow(s,0.16)) + (0.4275*t*Math.pow(s,0.16));
+    return(f);
+}
+
+function getwindchill(){
+    let t = parseInt(document.getElementById('high').value);
+    let s = parseInt(document.getElementById('wind-speed').value);
+    let answer = windChill(t,s);
+    document.getElementById('wind-chill').innerHTML = answer;
+}
+getwindchill();
+
+
 function myMap() {
     var mapProp= {
       center:new google.maps.LatLng(51.508742,-0.120850),
