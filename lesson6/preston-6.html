@@ -9,7 +9,6 @@
     </head>
     <body> 
         <div id="fridays" style="display: block; background-color: gold; text-align: center; padding:1em;"></div>
-        <script src='./js/fridays.js'></script>
         <header>
             <div class='header'>
                 <img src='../photos/logo_picture.svg' alt='Logo Image' class='logo-img'>
@@ -53,7 +52,7 @@
                     <img class='article-img' src='./images/field.jpeg' alt='Article Image'>
                 </div>
                 <div class='contact'>
-                    <img class='map' src='./images/preston.jpeg' alt='Map Image'>
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
                     <p class='contact-info'>Fake Stuff<br>Address<br>Phone Number<br>Email Address</p>
                 </div>
             </main>
@@ -63,5 +62,6 @@
             </footer>
         </div>
         <script src='./js/preston.js'></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMdAWRMNRUMlCol2o_DLrksqdZNCnjyo&callback=myMap"></script>
     </body>
 </html>
