@@ -1,14 +1,3 @@
-const images = document.querySelectorAll('img');
-
-const io = new IntersectionObserver (
-    (entries, io) => {
-        console.log(entries);
-    }
-);
-io.observe(images);
-
-
-
 function dayTime(){
     var full_date = new Date();
     var daysofWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -38,6 +27,9 @@ function fridays(){
      if (dayofWeek == "Friday"){
          let out = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.";
          document.getElementById("fridays").style.display = "block"
+         document.getElementById("fridays").style.backgroundColor = "gold";
+         document.getElementById("fridays").style.textAlign = "center";
+         document.getElementById("fridays").style.padding = "1em";
          document.getElementById("fridays").innerHTML = out;
      }
      else{
