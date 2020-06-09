@@ -1,14 +1,14 @@
-const images = document.querySelectorAll('img');
+const images = document.querySelectorAll('[data-src]');
 
 function preloadImage(img){
-    const source = img.getAttribute('img');
+    const source = img.getAttribute('data-src');
     if (!source){
         return;
     }
     img.src = source;
 }
 
-const options = {threshold: [0]};
+const options = {threshold: [0.5]};
 
 const io = new IntersectionObserver (
     (entries, io) => {
@@ -26,9 +26,7 @@ const io = new IntersectionObserver (
 
 images.forEach(image => {
     io.observe(image);
-})
-
-
+});
 function dayTime(){
     var full_date = new Date();
     var daysofWeek = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
