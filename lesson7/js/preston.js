@@ -8,7 +8,7 @@ function preloadImage(img){
     img.src = source;
 }
 
-const options = {threshold: [0.5]};
+const options = {threshold: [0.1]};
 
 const io = new IntersectionObserver (
     (entries, io) => {
