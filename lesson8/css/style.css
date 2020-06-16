@@ -286,27 +286,28 @@ fieldset{
     width: 10em;
     height: 4em;
     border-radius: 1em;
-    margin-left:40%;
+    margin-left:22%;
     background-color: lightgray;
-}
-.storm-button:hover{
-    box-shadow: 3px 3px 4px rgb(15, 88, 15);
-    color:white;
-    background-color: rgb(15, 88, 15);
 }
 label{
     margin:0 auto;
     font-family: 'Lato';
-    margin-left: 40%;
     font-style: oblique;
+    
 }
 input{
     margin:10px auto;
     text-align: center;
-    margin-left: 30%;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .danger-level{
     margin: auto;
+}
+textarea{
+    margin-left:0%;
+    margin-top: 10px;
+    width: 90%;
 }
 
 
@@ -508,6 +509,25 @@ input{
         transition:0.4s;
     }
     
+
+    .storm-button{
+        margin:5ox auto;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        font-family: 'Righteous';
+        width: 10em;
+        height: 4em;
+        border-radius: 1em;
+        margin-left:30%;
+        background-color: lightgray;
+    }
+    textarea{
+        margin-left:10%;
+        margin-top: 10px;
+        width:70%;
+    }
+
 }
 
 
@@ -621,5 +641,43 @@ input{
             display: block;
             max-width: 100%;
             grid-column: 3/4;
+        }
+
+
+        label{
+            margin:0 auto;
+            font-family: 'Lato';
+            margin-left: 40%;
+            font-style: oblique;
+        }
+        input{
+            margin:10px auto;
+            text-align: center;
+            margin-left: 30%;
+        }
+        .danger-level{
+            margin: auto;
+        }
+        .storm-button{
+            margin:5ox auto;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+            font-family: 'Righteous';
+            width: 10em;
+            height: 4em;
+            border-radius: 1em;
+            margin-left:40%;
+            background-color: lightgray;
+        }
+        .storm-button:hover{
+            box-shadow: 3px 3px 4px rgb(15, 88, 15);
+            color:white;
+            background-color: rgb(15, 88, 15);
+        }
+        textarea{
+            margin-left:15%;
+            margin-top: 10px;
+            width:70%;
         }
     }
