@@ -268,7 +268,7 @@ form{
     justify-items: center;
 }
 fieldset{
-    max-width: 80%;
+    max-width: 60%;
     background-color: lightgrey;
     box-shadow: 5px 5px 5px grey;
     margin:0 auto;
@@ -282,18 +282,32 @@ fieldset{
     text-align: center;
     justify-self: center;
     align-self: center;
+    font-family: 'Righteous';
     width: 10em;
     height: 4em;
     border-radius: 1em;
+    margin-left:40%;
+    background-color: lightgray;
 }
 .storm-button:hover{
-    box-shadow: 3px 3px 4px gray;
+    box-shadow: 3px 3px 4px rgb(15, 88, 15);
+    color:white;
+    background-color: rgb(15, 88, 15);
+}
+label{
+    margin:0 auto;
+    font-family: 'Lato';
+    margin-left: 40%;
+    font-style: oblique;
 }
 input{
-    margin: 10px auto;
-    align-self: center;
+    margin:10px auto;
+    text-align: center;
+    margin-left: 30%;
 }
-
+.danger-level{
+    margin: auto;
+}
 
 
 
