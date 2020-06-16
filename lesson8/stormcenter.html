@@ -47,7 +47,7 @@
                         <label for='storm-day'>Date of Storm:</label><br>
                         <input type='date' name='storm-day' required='required'><br>
                         <label for='type'>Storm Type:</label><br>
-                        <input list="storms">
+                        <input list="storms" name='type'><br>
                         <datalist id='storms'>
                             <option>Flash Flood</option>
                             <option>Hail</option>
@@ -55,6 +55,15 @@
                             <option>Thunderstorm</option>
                             <option>Tornado</option>
                         </datalist>
+                        <label name='region'>Region</label><br>
+                        <input list='regions' name='region'><br>
+                        <datalist id='regions'>
+                            <option>Fish Haven</option>
+                            <option>Preston</option>
+                            <option>Soda Springs</option>
+                        </datalist>
+                        <label name='severity'>Severity: </label><br>
+                        <input type="range" name='severity' min='1' max='10' step='1'><br>
                     </fieldset>
                     <input type='submit' class='storm-button' value='Submit'>
                 </form>
