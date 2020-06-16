@@ -257,6 +257,51 @@ ul{
 }
 
 
+/* -----------------------------------STORM CENTER PAGE STYLES -------------------------------------------------*/
+
+
+form{
+    max-width: 80%;
+    background-color:  rgb(82, 163, 65);
+    border-radius: 1em;
+    margin: 10px auto;
+    justify-items: center;
+}
+fieldset{
+    max-width: 80%;
+    background-color: lightgrey;
+    box-shadow: 5px 5px 5px grey;
+    margin:0 auto;
+    padding:20px;
+    border-radius: 1em;
+    align-items:center;
+    align-content: center;
+}
+.storm-button{
+    margin:5ox auto;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 10em;
+    height: 4em;
+    border-radius: 1em;
+}
+.storm-button:hover{
+    box-shadow: 3px 3px 4px gray;
+}
+input{
+    margin: 10px auto;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:600px){
     .content{
         max-width: 75%;
