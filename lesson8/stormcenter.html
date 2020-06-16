@@ -29,7 +29,35 @@
                 </nav>
         </header>
         <div class='content'>
-            <main class='gallery'>
+            <main class='stormcenter'>
+                <form method='get' action='./thanks.html'>
+                    <fieldset class='storm-form'>
+                        <h2>Contact Information: </h2><br>
+                        <label for='name'>Name: </label><br>
+                        <input type='text' required='required' name='name'><br>
+                        <label for='email'>Email: </label><br>
+                        <input type='text' name='email'><br>
+                        <label for='phone'>Phone: </label><br>
+                        <input type='text' required='required' name='phone'><br>
+                        <label for='zip'>Zip Code: </label><br>
+                        <input type='text' required='required' name='zip'><br>
+                    </fieldset>
+                    <fieldset class='storm-form'>
+                     <h2>Storm Details:</h2>
+                        <label for='storm-day'>Date of Storm:</label><br>
+                        <input type='date' name='storm-day' required='required'><br>
+                        <label for='type'>Storm Type:</label><br>
+                        <input list="storms">
+                        <datalist id='storms'>
+                            <option>Flash Flood</option>
+                            <option>Hail</option>
+                            <option>Hurricane</option>
+                            <option>Thunderstorm</option>
+                            <option>Tornado</option>
+                        </datalist>
+                    </fieldset>
+                    <input type='submit' class='storm-button' value='Submit'>
+                </form>
             </main>
             <footer>
                 <p class='footer-p1'>@Informed Weather | Attributions | Adam J Cross  </p>
