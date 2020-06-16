@@ -31,19 +31,20 @@
         <div class='content'>
             <main class='stormcenter'>
                 <form method='get' action='./thanks.html'>
-                    <h2>Contact Information: </h2><br>
+                    
                     <fieldset class='storm-form'>
+                        <legend>Contact Information: </legend><br>
                         <label for='name'>Name: </label><br>
                         <input type='text' required='required' name='name'><br>
                         <label for='email'>Email: </label><br>
-                        <input type='text' name='email'><br>
+                        <input type='text' name='email' placeholder="example@gmail.com"><br>
                         <label for='phone'>Phone: </label><br>
                         <input type='text' required='required' name='phone'><br>
                         <label for='zip'>Zip Code: </label><br>
                         <input type='text' required='required' name='zip'><br>
                     </fieldset>
-                    <h2>Storm Details:</h2>
                     <fieldset class='storm-form'>
+                        <legend>Storm Details: </legend><br>
                         <label for='storm-day'>Date of Storm:</label><br>
                         <input type='date' name='storm-day' required='required'><br>
                         <label for='type'>Storm Type:</label><br>

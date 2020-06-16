@@ -266,13 +266,14 @@ form{
     border-radius: 1em;
     margin: 10px auto;
     justify-items: center;
+    padding:5px;
 }
 fieldset{
     max-width: 60%;
     background-color: lightgrey;
     box-shadow: 5px 5px 5px grey;
-    margin:0 auto;
-    padding:20px;
+    margin:3em auto;
+    padding-top:1em;
     border-radius: 1em;
     align-items:center;
     align-content: center;
@@ -309,6 +310,15 @@ textarea{
     margin-top: 10px;
     width: 90%;
 }
+legend{
+    background-color: rgb(15, 88, 15);
+    color:white;
+    font-style: bold;
+    font-family: 'Righteous';
+    font-size: 1em;
+    padding:0.3em;
+    border-radius: 20px;
+}
 
 
 
@@ -316,8 +326,7 @@ textarea{
 
 
 
-
-@media screen and (min-width:600px){
+@media screen and (min-width:720px){
     .content{
         max-width: 75%;
         margin:auto;
@@ -527,7 +536,15 @@ textarea{
         margin-top: 10px;
         width:70%;
     }
-
+    legend{
+        background-color: rgb(15, 88, 15);
+        color:white;
+        font-style: bold;
+        font-family: 'Righteous';
+        font-size: 1.5em;
+        padding:0.3em;
+        border-radius: 20px;
+    }
 }
 
 
@@ -679,5 +696,14 @@ textarea{
             margin-left:15%;
             margin-top: 10px;
             width:70%;
+        }
+        legend{
+            background-color: rgb(15, 88, 15);
+            color:white;
+            font-style: bold;
+            font-family: 'Righteous';
+            font-size: 2em;
+            padding:0.3em;
+            border-radius: 20px;
         }
     }
