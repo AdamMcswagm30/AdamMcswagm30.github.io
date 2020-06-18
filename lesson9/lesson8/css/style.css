@@ -279,7 +279,7 @@ fieldset{
     align-content: center;
 }
 .storm-button{
-    margin:5ox auto;
+    margin:5px auto;
     text-align: center;
     justify-self: center;
     align-self: center;
@@ -519,7 +519,7 @@ legend{
     
 
     .storm-button{
-        margin:5ox auto;
+        margin:5px auto;
         text-align: center;
         justify-self: center;
         align-self: center;
@@ -674,7 +674,7 @@ legend{
             margin: auto;
         }
         .storm-button{
-            margin:5ox auto;
+            margin:5px auto;
             text-align: center;
             justify-self: center;
             align-self: center;
