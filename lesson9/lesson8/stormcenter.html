@@ -1,92 +1,95 @@
 <!DOCTYPE HTML>
 <html lang='en-us'>
-    <head>
-        <meta charset='utf-8'>
-        <title>Storm Center</title>
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link type='text/css' rel='stylesheet' href='./css/style.css'/>
-        <link rel="Shortcut Icon" href="../favicon.ico">
-    </head>
-    <body> 
-        <div id="fridays"></div>
-        <header>
-            <div class='header'>
-                <img src='../photos/logo_picture.svg' alt='Logo Image' class='logo-img'>
-                <div class='-header-words'>
-                    <h1>Storm Center</h1>
-                </div>       
+
+<head>
+    <meta charset='utf-8'>
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link type='text/css' rel='stylesheet' href='./css/style.css' />
+    <link rel="Shortcut Icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div id="fridays"></div>
+    <header>
+        <div class='header'>
+            <img src='../photos/logo_picture.svg' alt='Logo Image' class='logo-img'>
+            <div class='-header-words'>
+                <h1>Storm Center</h1>
             </div>
-            <nav>
-                <ul class = "navigation">
-                    <li><a class = "ham" href = "#">&#9776; Menu</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./preston-8.html">Preston</a></li>
-                    <li><a href="">Soda Springs</a></li>
-                    <li><a href="">Fish Haven</a></li>
-                    <li class='active'><a href="./stormcenter.html" class='active'>Storm Center</a></li>
-                    <li><a href="./gallery-8.html">Gallery</a></li>
-                    </ul>
-                </nav>
-        </header>
-        <div class='content'>
-            <main class='stormcenter'>
-                <form method='get' action='./thanks.html'>
-                    
-                    <fieldset class='storm-form'>
-                        <legend>Contact Information: </legend><br>
-                        <label for='name'>Name: </label><br>
-                        <input type='text' required='required' id='name'><br>
-                        <label for='email'>Email: </label><br>
-                        <input type='text' id='email' placeholder="example@gmail.com"><br>
-                        <label for='phone'>Phone: </label><br>
-                        <input type='text' required='required' id='phone'><br>
-                        <label for='zip'>Zip Code: </label><br>
-                        <input type='text' required='required' id='zip'><br>
-                    </fieldset>
-                    <fieldset class='storm-form'>
-                        <legend>Storm Details: </legend><br>
-                        <label for='storm-day'>Date of Storm:</label><br>
-                        <input type='date' id='storm-day' required='required'><br>
-                        <label for='type'>Storm Type:</label><br>
-                        <input list="storms" id='type' required='required'><br>
-                        <datalist id='storms'>
-                            <option>Flash Flood</option>
-                            <option>Hail</option>
-                            <option>Hurricane</option>
-                            <option>Thunderstorm</option>
-                            <option>Tornado</option>
-                        </datalist>
-                        <label for='region'>Region</label><br>
-                        <input list='regions' id='region' required='required'><br>
-                        <datalist id='regions'>
-                            <option>Fish Haven</option>
-                            <option>Preston</option>
-                            <option>Soda Springs</option>
-                        </datalist>
-                        <label for='severity'>Severity: </label><br>
-                        <input type="range" id='severity' min='1' max='10' step='1'><br>
-                        <label for='danger'>Are you In Danger?<br>
-                            <input class="radio-button" type='radio' id='danger' value='yes'>
-                            Yes
-                        </label><br>
-                        <label class='danger-level' for='danger2'>
-                            <input class="radio-button" type='radio' id='danger2' value='no'>
-                            No
-                        </label><br>
-                        <label class='danger-level' for='danger3'>
-                            <input class="radio-button" type='radio' id='danger3' value='maybe'>
-                            Maybe
-                        </label><br>
-                        <label for='comments'>Additional Comments: </label>
-                        <textarea id='comments' rows='5' cols='45'></textarea>
-                    </fieldset>
-                    <input type='submit' class='storm-button' value='Submit'>
-                </form>
-            </main>
-            <footer>
-                <p class='footer-p1'>@Informed Weather | Attributions | Adam J Cross  </p>
-                <p class='footer-p2'><span id='date_time' class='footer-p'></span></p>
-            </footer>
         </div>
-        <script src='./js/preston.js'></script>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./preston-8.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li class='active'><a href="./stormcenter.html" class='active'>Storm Center</a></li>
+                <li><a href="./gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='content'>
+        <main class='stormcenter'>
+            <form method='get' action='./thanks.html'>
+
+                <fieldset class='storm-form'>
+                    <legend>Contact Information: </legend><br>
+                    <label for='name'>Name: </label><br>
+                    <input type='text' required='required' id='name'><br>
+                    <label for='email'>Email: </label><br>
+                    <input type='text' id='email' placeholder="example@gmail.com"><br>
+                    <label for='phone'>Phone: </label><br>
+                    <input type='text' required='required' id='phone'><br>
+                    <label for='zip'>Zip Code: </label><br>
+                    <input type='text' required='required' id='zip'><br>
+                </fieldset>
+                <fieldset class='storm-form'>
+                    <legend>Storm Details: </legend><br>
+                    <label for='storm-day'>Date of Storm:</label><br>
+                    <input type='date' id='storm-day' required='required'><br>
+                    <label for='type'>Storm Type:</label><br>
+                    <input list="storms" id='type' required='required'><br>
+                    <datalist id='storms'>
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist>
+                    <label for='region'>Region</label><br>
+                    <input list='regions' id='region' required='required'><br>
+                    <datalist id='regions'>
+                        <option>Fish Haven</option>
+                        <option>Preston</option>
+                        <option>Soda Springs</option>
+                    </datalist>
+                    <label for='severity'>Severity: </label><br>
+                    <input type="range" id='severity' min='1' max='10' step='1'><br>
+                    <label for='danger'>Are you In Danger?<br>
+                        <input class="radio-button" type='radio' id='danger' value='yes'>
+                        Yes
+                    </label><br>
+                    <label class='danger-level' for='danger2'>
+                        <input class="radio-button" type='radio' id='danger2' value='no'>
+                        No
+                    </label><br>
+                    <label class='danger-level' for='danger3'>
+                        <input class="radio-button" type='radio' id='danger3' value='maybe'>
+                        Maybe
+                    </label><br>
+                    <label for='comments'>Additional Comments: </label>
+                    <textarea id='comments' rows='5' cols='45'></textarea>
+                </fieldset>
+                <input type='submit' class='storm-button' value='Submit'>
+            </form>
+        </main>
+        <footer>
+            <p class='footer-p1'>@Informed Weather | Attributions | Adam J Cross </p>
+            <p class='footer-p2'><span id='date_time' class='footer-p'></span></p>
+        </footer>
+    </div>
+    <script src='./js/preston.js'></script>
+
 </html>
