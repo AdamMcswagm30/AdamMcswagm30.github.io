@@ -1,0 +1,19 @@
+.cards {
+    padding: 10px;
+    border-radius: 0.5em;
+    background-color: rgb(89, 152, 173);
+}
+
+img {
+    box-shadow: 5px 5px 5px rgb(48, 48, 138);
+}
+
+header {
+    font-size: 2em;
+    color: rgb(28, 28, 114);
+    text-align: center;
+}
+
+body {
+    background-color: orange;
+}
