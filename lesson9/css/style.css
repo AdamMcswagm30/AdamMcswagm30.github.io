@@ -237,6 +237,10 @@ nav a {
     padding-bottom: 1em;
 }
 
+.gallery-desc {
+    display: none;
+}
+
 .gallery-box1 {
     display: block;
     max-width: 600px;
@@ -289,12 +293,6 @@ nav a {
     display: block;
     max-width: 600px;
     grid-column: 1/2;
-}
-
-.gallery-desc {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 1em;
 }
 
 .gallery-img {
@@ -463,8 +461,7 @@ legend {
         grid-gap: 1em;
     }
     .gallery-desc {
-        display: block;
-        margin: 0 auto;
+        display: none;
     }
     .gallery-img {
         max-width: 100%;
@@ -474,10 +471,6 @@ legend {
         max-width: 100%;
         grid-column: 1/2;
         box-shadow: 0px 0px 2px black;
-    }
-    .gallery-box1:hover {
-        box-shadow: 0px 0px 5px 1px black;
-        transition: 0.4s;
     }
     .gallery-box2 {
         display: block;
