@@ -1,6 +1,13 @@
 const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 
-
+document.addEventListener("DOMContentLoaded", () => {
+    var head = document.getElementsByTagName('HEAD')[0];
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = './css/prophets.css'
+    head.appendChild(link);
+});
 
 fetch(requestURL)
     .then(function(response) {
@@ -33,10 +40,6 @@ fetch(requestURL)
             image.setAttribute('src', prophets[i].imageurl);
             card.appendChild(image);
             document.querySelector('div.cards').appendChild(card);
-
-
-
-
         }
 
     });
