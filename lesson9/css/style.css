@@ -872,7 +872,7 @@ section {
     }
     section:nth-child(7) {
         grid-column: 1/4;
-        max-width: 28.5%;
+        max-width: 30%;
         margin: 10px auto;
     }
     section:hover {
