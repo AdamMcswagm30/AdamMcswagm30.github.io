@@ -47,9 +47,29 @@
             </div>
             <div class='forecast'>
                 <h3>5 Day Forecast</h3><br>
-                <div class='forecast-box'>
-
-                </div>
+                <table class='forecast-table'>
+                    <tr id='forcast-days'>
+                        <td class='forcast-day'>Wed</td>
+                        <td class='forcast-day'>Thu</td>
+                        <td class='forcast-day'>Fri</td>
+                        <td class='forcast-day'>Sat</td>
+                        <td class='forcast-day'>Sun</td>
+                    </tr>
+                    <tr id='forcast-images'>
+                        <td><span id='day0'></span><img src='' alt='' id='img0'></td>
+                        <td><span id='day1'></span><img src='' alt='' id='img1'></td>
+                        <td><span id='day2'></span><img src='' alt='' id='img2'></td>
+                        <td><span id='day3'></span><img src='' alt='' id='img3'></td>
+                        <td><span id='day4'></span><img src='' alt='' id='img4'></td>
+                    </tr>
+                    <tr id='forcast-degrees'>
+                        <td class='degrees'><span id='deg0'></span></td>
+                        <td class='degrees'><span id='deg1'></span></td>
+                        <td class='degrees'><span id='deg2'></span></td>
+                        <td class='degrees'><span id='deg3'></span></td>
+                        <td class='degrees'><span id='deg4'></span></td>
+                    </tr>
+                </table>
             </div>
             <div class='article'>
                 <div class='article-words'>
@@ -62,32 +82,16 @@
                 <div class="mapouter">
                     <div class="gmap_canvas">
                         <iframe width="415" height="415" id="gmap_canvas" src="https://maps.google.com/maps?q=preston%2C%20Id&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <a href="https://www.whatismyip-address.com/nordvpn-coupon/">nordvpn best deal</a></div>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 415px;
-                            width: 415px;
-                        }
-                        
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none!important;
-                            height: 415px;
-                            width: 415px;
-                        }
-                    </style>
+                    </div>
+                    <p class='contact-info'>Fake Stuff<br>Address<br>Phone Number<br>Email Address</p>
                 </div>
-                <p class='contact-info'>Fake Stuff<br>Address<br>Phone Number<br>Email Address</p>
-            </div>
         </main>
         <footer>
             <p class='footer-p1'>@Informed Weather | Attributions | Adam J Cross </p>
             <p class='footer-p2'><span id='date_time' class='footer-p'></span></p>
         </footer>
-    </div>
-    <script src='./js/preston.js'></script>
+        </div>
+        <script src='./js/preston.js'></script>
 </body>
 
 </html>

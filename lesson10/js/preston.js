@@ -24,6 +24,19 @@ function weatherApi() {
             let currTemp = Math.round(kelvinFar(temp) * 100) / 100 + '\xB0' + 'F';
             document.getElementById('currTemp').innerHTML = currTemp;
 
+
+            for (let i = 0; i < 5; i++) {
+                let x = obj.list[i].main.temp;
+                let temp = Math.round(kelvinFar(x) * 100) / 100;
+                document.getElementById('deg' + i).textContent = temp;
+            }
+            for (let i = 0; i < 5; i++) {
+                let imagesrc = 'https://openweathermap.org/img/w/' + obj.list[i].weather[0].icon + '.png';
+                let desc = obj.list[i].weather[0].description;
+                document.getElementById('img' + i).setAttribute('src', imagesrc);
+                document.getElementById('img' + i).setAttribute('alt', desc);
+            }
+
         });
 
     document.addEventListener("DOMContentLoaded", () => {
