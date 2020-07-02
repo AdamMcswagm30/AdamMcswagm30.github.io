@@ -1,11 +1,12 @@
 // Weather API
 function weatherApi() {
     const prestonURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9d9f72be67a23278732a4344d3daa9f8';
+    const forcastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9d9f72be67a23278732a4344d3daa9f8';
     fetch(prestonURL)
         .then((response) => response.json())
         .then((jsObject) => {
             const obj = jsObject;
-            console.table(jsObject); // temporary checking for valid response and data parsing
+            console.table(obj); // temporary checking for valid response and data parsing
 
             let currWeather = obj.main.temp_max;
             let high = Math.round(kelvinFar(currWeather) * 100.0) / 100.0;
@@ -23,16 +24,24 @@ function weatherApi() {
             let temp = obj.main.temp;
             let currTemp = Math.round(kelvinFar(temp) * 100) / 100 + '\xB0' + 'F';
             document.getElementById('currTemp').innerHTML = currTemp;
+        });
+
+
+    fetch(forcastURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            const forcast = jsObject;
+            console.table(forcast); // temporary checking for valid response and data parsing
 
 
             for (let i = 0; i < 5; i++) {
-                let x = obj.list[i].main.temp;
+                let x = forcast.list[i].main.temp;
                 let temp = Math.round(kelvinFar(x) * 100) / 100;
                 document.getElementById('deg' + i).textContent = temp;
             }
             for (let i = 0; i < 5; i++) {
-                let imagesrc = 'https://openweathermap.org/img/w/' + obj.list[i].weather[0].icon + '.png';
-                let desc = obj.list[i].weather[0].description;
+                let imagesrc = 'https://openweathermap.org/img/w/' + forcast.list[i].weather[0].icon + '.png';
+                let desc = forcast.list[i].weather[0].description;
                 document.getElementById('img' + i).setAttribute('src', imagesrc);
                 document.getElementById('img' + i).setAttribute('alt', desc);
             }
@@ -47,6 +56,7 @@ function weatherApi() {
         link.href = './css/style.css'
         head.appendChild(link);
     });
+
 }
 weatherApi();
 
