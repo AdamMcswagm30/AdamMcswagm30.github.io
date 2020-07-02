@@ -1,3 +1,51 @@
+// Weather API
+function weatherApi() {
+    const prestonURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9d9f72be67a23278732a4344d3daa9f8';
+    fetch(prestonURL)
+        .then((response) => response.json())
+        .then((jsObject) => {
+            const obj = jsObject;
+            console.table(jsObject); // temporary checking for valid response and data parsing
+
+            let currWeather = obj.main.temp_max;
+            let high = Math.round(kelvinFar(currWeather) * 100.0) / 100.0;
+            document.getElementById('high').innerHTML = high + '\xB0' + 'F';
+
+            let humidity = obj.main.humidity;
+            document.getElementById('humidity').innerHTML = humidity;
+
+            let desc = obj.weather[0].description;
+            document.getElementById('currently').innerHTML = desc;
+
+            let wind = obj.wind.speed;
+            document.getElementById('wind-speed').innerHTML = wind;
+
+            let temp = obj.main.temp;
+            let currTemp = Math.round(kelvinFar(temp) * 100) / 100 + '\xB0' + 'F';
+            document.getElementById('currTemp').innerHTML = currTemp;
+
+        });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        var head = document.getElementsByTagName('HEAD')[0];
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './css/style.css'
+        head.appendChild(link);
+    });
+}
+weatherApi();
+
+
+// Kelvin to Fahrenheit Calculator:
+function kelvinFar(x) {
+    x -= 273.15;
+    x *= 9 / 5;
+    x += 32;
+    return x;
+}
+
 const images = document.querySelectorAll('[data-src]');
 
 function preloadImage(img) {
@@ -49,7 +97,6 @@ hambutton.addEventListener('click', () => { mainnav.classList.toggle('responsive
 
 
 function fridays() {
-    console.log("daytime");
     var full_date = new Date();
     var daysofWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var dayofWeek = daysofWeek[full_date.getDay()];
@@ -66,22 +113,16 @@ fridays();
 
 function windChill(t, s) {
     let f = 35.74 + 0.6125 * t - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
-    document.getElementById('wind-chill').innerHTML = f;
 }
 
 function getwindchill() {
     let t = parseInt(document.getElementById('high').value);
     let s = parseInt(document.getElementById('wind-speed').value);
     let answer = windChill(t, s);
+    if (answer <= 0) {
+        document.getElementById('wind-chill').innerHTML = f + '\xB0';
+    } else {
+        document.getElementById('wind-chill').innerHTML = 'N/A';
+    }
 }
 getwindchill();
-
-
-
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}

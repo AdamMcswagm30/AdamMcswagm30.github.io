@@ -681,11 +681,30 @@ section {
 /* ------------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width:1000px) {
+    .content {
+        max-width: 90%;
+    }
     .logo-img {
         max-width: 8%;
         display: inline-block;
         justify-items: center;
         padding-right: 1em;
+    }
+    .hero {
+        height: 25em;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+    .weather-summary {
+        max-width: 25em;
+        height: 13em;
+        font-size: 1.1em;
+        padding-top: 0em;
+        margin-top: 0;
+    }
+    .wheader {
+        padding: 0;
     }
     h1,
     h2 {
