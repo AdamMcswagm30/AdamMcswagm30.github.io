@@ -37,7 +37,7 @@ function weatherApi() {
             for (let i = 0; i < 5; i++) {
                 let x = forcast.list[i].main.temp;
                 let temp = Math.round(kelvinFar(x) * 100) / 100;
-                document.getElementById('deg' + i).textContent = temp;
+                document.getElementById('deg' + i).textContent = temp + '\xB0' + 'F';
             }
             for (let i = 0; i < 5; i++) {
                 let imagesrc = 'https://openweathermap.org/img/w/' + forcast.list[i].weather[0].icon + '.png';
