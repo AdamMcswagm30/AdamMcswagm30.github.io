@@ -416,6 +416,7 @@ table {
     background-color: lightgray;
     border-radius: 1em;
     text-align: center;
+    box-shadow: 0px 0px 5px 2px rgb(15, 88, 15);
 }
 
 .forcast-day {
