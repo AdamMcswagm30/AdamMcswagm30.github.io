@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang='en-us'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Preston</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link type='text/css' rel='stylesheet' href='./css/style.css' />
+    <link rel="Shortcut Icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div id="fridays" style="display: block; background-color: gold; text-align: center; padding:1em;"></div>
+    <header>
+        <div class='header'>
+            <img data-src='./photos/logo_picture.svg' alt='Logo Image' class='logo-img'>
+            <div class='-header-words'>
+                <h1>Informed Weather</h1>
+                <p><i>Weather at a moment's notice</i></p>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li class='active'><a class='active' href="./preston-11.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li><a href="./stormcenter.html">Storm Center</a></li>
+                <li><a href="./gallery-11.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class='content'>
+        <main>
+            <h2>Preston</h2>
+            <div class='hero'>
+                <div class='weather-summary'>
+                    <h4 class='wheader'>Weather Summary</h4>
+                    <p class='summary'>Currently: </p><span id='currently'>Rainy</span><br>
+                    <p class='summary'>Current Temp: </p><span id='currTemp'></span><br>
+                    <p class='summary'>High: </p><span id='high'></span><br>
+                    <p class='summary'>Wind Chill: </p><span id='wind-chill'></span><br>
+                    <p class='summary'>Humidity: </p><span id='humidity'>95%</span><span>%</span><br>
+                    <p class='summary'>Wind Speed: </p><span id='wind-speed'>12</span><span>mph</span>
+                </div>
+            </div>
+            <div class='forecast'>
+                <h3>5 Day Forecast</h3><br>
+                <table class='forecast-table'>
+                    <tr id='forcast-days'>
+                        <td class='forcast-day'>Wed</td>
+                        <td class='forcast-day'>Thu</td>
+                        <td class='forcast-day'>Fri</td>
+                        <td class='forcast-day'>Sat</td>
+                        <td class='forcast-day'>Sun</td>
+                    </tr>
+                    <tr id='forcast-images'>
+                        <td><span><b id='day0'></b></span><img src='' alt='' id='img0'></td>
+                        <td><span><b id='day1'></b></span><img src='' alt='' id='img1'></td>
+                        <td><span><b id='day2'></b></span><img src='' alt='' id='img2'></td>
+                        <td><span><b id='day3'></b></span><img src='' alt='' id='img3'></td>
+                        <td><span><b id='day4'></b></span><img src='' alt='' id='img4'></td>
+                    </tr>
+                    <tr id='forcast-degrees'>
+                        <td class='degrees'><span id='deg0'></span></td>
+                        <td class='degrees'><span id='deg1'></span></td>
+                        <td class='degrees'><span id='deg2'></span></td>
+                        <td class='degrees'><span id='deg3'></span></td>
+                        <td class='degrees'><span id='deg4'></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class='article'>
+                <div class='article-words'>
+                    <h3>Article</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, expedita reiciendis quas magni dicta tempore voluptate earum asperiores beatae adipisci similique rem accusantium, molestiae illo, debitis ad vero soluta aliquid!</p>
+                </div>
+                <img class='article-img' data-src='./images/new-image.jpeg' alt='Article Image'>
+            </div>
+            <div class='contact'>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="415" height="415" id="gmap_canvas" src="https://maps.google.com/maps?q=preston%2C%20Id&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                    <p class='contact-info'>Fake Stuff<br>Address<br>Phone Number<br>Email Address</p>
+                </div>
+        </main>
+        <footer>
+            <p class='footer-p1'>@Informed Weather | Attributions | Adam J Cross </p>
+            <p class='footer-p2'><span id='date_time' class='footer-p'></span></p>
+        </footer>
+        </div>
+        <script src='./js/preston.js'></script>
+</body>
+
+</html>
