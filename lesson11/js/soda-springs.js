@@ -64,14 +64,6 @@ weatherApi();
 function townEvents() {
     const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-    document.addEventListener("DOMContentLoaded", () => {
-        var head = document.getElementsByTagName('HEAD')[0];
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = './css/prophets.css'
-        head.appendChild(link);
-    });
 
     fetch(requestURL)
         .then(function(response) {
